@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TitleStrategy } from '@angular/router';
 
 @Component({
   selector: 'app-desafio',
@@ -13,11 +14,13 @@ export class Desafio {
 
   aumentar(): void {
     this.quantidadeMat++;
+    this.mandarMensagem();
   }
 
   diminuir (): void{
     if ( this.quantidadeMat > 1 ) {
       this.quantidadeMat--
+      this.mandarMensagem();
     }
   }
 
