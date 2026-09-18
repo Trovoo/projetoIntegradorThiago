@@ -1,0 +1,6 @@
+<h1>Produto: {{produto}}</h1>
+<h1>Quantidade de teclados: {{contador}}</h1>
+
+<button (click)="mais()"> + </button>
+
+<button (click)="descurtir()" [disabled]="contador === 0"> - </button>

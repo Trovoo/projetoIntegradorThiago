@@ -14,6 +14,8 @@ export class Exercicio6 {
   }
 
   descurtir() {
-    this.contador--
+    if (this.contador > 0) {
+    this.contador--;
+  }
   }
 }

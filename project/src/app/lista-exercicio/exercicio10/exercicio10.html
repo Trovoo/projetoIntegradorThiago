@@ -1,0 +1,15 @@
+<div class="login-container">
+  <div>
+    <label for="usuario">Usuário: </label>
+    <input id="usuario" type="text" [(ngModel)]="usuario" />
+  </div>
+
+  <div>
+    <label for="senha">Senha: </label>
+    <input id="senha" type="password" [(ngModel)]="senha" />
+  </div>
+
+  <button  (click)="entrar()"  [disabled]="!usuario || !senha"> Entrar </button>
+
+  <p *ngIf="mensagemBoasVindas">{{ mensagemBoasVindas }}</p>
+</div>

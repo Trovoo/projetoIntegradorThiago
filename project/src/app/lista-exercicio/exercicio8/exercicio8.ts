@@ -9,4 +9,9 @@ import { Component } from '@angular/core';
 export class Exercicio8 {
   name: String = '';
   quantidade: number = 0; 
+  preco: number = 0;
+
+  get total(): number {
+    return this.quantidade * this.preco;
+  }
 }

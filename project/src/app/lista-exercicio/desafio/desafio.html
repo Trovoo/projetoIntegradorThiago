@@ -1,0 +1,14 @@
+<div class="Materias">
+    <div>
+    <label for="nome">Nome: </label>
+    <input id="nome" type="text" [(ngModel)]="nome"/>
+  </div>
+        <span><strong>Quantidade: </strong> {{quantidadeMat}} </span>
+        <button (click)="diminuir()" [disabled]="quantidadeMat === 0"> - </button>
+        <button (click)="aumentar()"> + </button>
+
+    <div>
+        <button (click)="mandarMensagem()" [disabled]="!nome"> Realizar Matrícula </button>
+
+    <h1>{{mensagem}}</h1>
+</div>
